@@ -1,0 +1,30 @@
+body{
+    /* background: linear-gradient(red, blue); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}.title{
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.title2{
+    font-size: 100px;
+}.title{
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.title2{
+    font-size: 100px;
+}.title{
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.title2{
+    font-size: 100px;
+}
