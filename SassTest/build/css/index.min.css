@@ -1,0 +1,14 @@
+body {
+  /* background: linear-gradient(red, blue); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  border: 1px solid red;
+  font-size: 20px;
+  height: 40px; }
+  [data-dpr="2"] .header {
+    font-size: 40px; }
+  [data-dpr="2"] .header {
+    height: 80px; }

@@ -5,5 +5,14 @@ this project is react learning note
   
     该目录讲解了PureComponent和Component的区别
 
+- ## ContextTest
+  
+    该目录为context的基本使用
 
+- ## UncontrolledComponent
+  
+    该目录为非受控组件的基本使用
 
+- ## Refs
+  
+    Refs 和 Refs 转发

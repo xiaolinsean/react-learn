@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-purecomponent-dev": "webpack --config ./PureComponentTest/webpack.config.dev.js -w",
-    "build-demo1-dev": "webpack --mode=development --config ./demo1/webpack.config.js -w",
-    "build-demo1-prod": "webpack --mode=production --config ./demo1/webpack.config.js",
+    "build-context-dev": "webpack --config ./ContextTest/webpack.config.dev.js -w",
+    "build-uncontrolled-dev": "webpack --config ./UncontrolledComponent/webpack.config.dev.js -w",
+    "build-refs-dev": "webpack --config ./Refs/webpack.config.dev.js -w",
+    "build-hook-dev": "webpack --config ./HookTest/webpack.config.dev.js -w",
+    "build-sass-dev": "webpack --config ./SassTest/webpack.config.dev.js -w",
+
     "build-demo2-dev": "webpack --config ./demo2/webpack.config.dev.js",
     "build-demo2-dev-server": "webpack-dev-server --config ./demo2/webpack.config.server.js --hot --inline",
     "build-demo2-prod": "webpack --config ./demo2/webpack.config.prod.js --progress"
@@ -24,7 +28,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.6.1",
-    "babel-core": "^7.0.0-beta.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^7.0.0-beta.0",
@@ -65,6 +69,7 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
     "@babel/runtime": "^7.1.0",
-    "axios": "^0.19.0"
+    "axios": "^0.19.0",
+    "core-js": "^3.4.5"
   }
 }

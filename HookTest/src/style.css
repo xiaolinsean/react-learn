@@ -1,0 +1,7 @@
+body{
+    /* background: linear-gradient(red, blue); */
+    display: flex;
+}
+#content{
+    width: 50%;
+}

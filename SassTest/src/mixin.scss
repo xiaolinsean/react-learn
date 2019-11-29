@@ -1,0 +1,6 @@
+@mixin justifySize($key,$value) {
+    #{$key}: $value + px;
+    [data-dpr="2"] &{
+        #{$key}: ($value * 2) + px;
+    }
+}

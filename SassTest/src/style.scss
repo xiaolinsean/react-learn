@@ -1,0 +1,10 @@
+@import "./mixin.scss";
+body{
+    /* background: linear-gradient(red, blue); */
+    display: flex;
+}
+.header{
+    border: 1px solid red;
+    @include justifySize('font-size',20);
+    @include justifySize('height',40);
+}

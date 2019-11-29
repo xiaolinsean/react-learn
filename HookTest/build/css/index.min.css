@@ -1,0 +1,9 @@
+body{
+    /* background: linear-gradient(red, blue); */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+#content{
+    width: 50%;
+}
