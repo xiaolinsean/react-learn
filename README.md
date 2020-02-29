@@ -19,4 +19,8 @@ this project is react learning note
 
 - ## Lifecycle
     
-    新旧react版本的生命周期函数对比
+    新旧 react 版本的生命周期函数对比
+
+- ## SetStateTest
+    
+    setState 使用注意事项讲解
