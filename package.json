@@ -11,6 +11,7 @@
     "build-refs-dev": "webpack --config ./Refs/webpack.config.dev.js -w",
     "build-hook-dev": "webpack --config ./HookTest/webpack.config.dev.js -w",
     "build-sass-dev": "webpack --config ./SassTest/webpack.config.dev.js -w",
+    "build-life-dev": "webpack --config ./Lifecycle/webpack.config.dev.js -w",
 
     "build-demo2-dev": "webpack --config ./demo2/webpack.config.dev.js",
     "build-demo2-dev-server": "webpack-dev-server --config ./demo2/webpack.config.server.js --hot --inline",

@@ -1,4 +1,4 @@
-# React 中的 PureComponent Vs Component
+# React 中的 PureComponent Vs Component Vs 函数组件
 
 ## PureComponent的作用：
 PureComponent 其实是在内部帮我们简单实现了一下shouldComponentUpdate的功能，以便提供组件的性能；这里的简单指是：对prop和state做浅比较，若浅比较结果相同，则该组件以及其子组件不做render；否则，render。
@@ -11,7 +11,7 @@ PureComponent 其实是在内部帮我们简单实现了一下shouldComponentUpd
 
 当点击`add outer num`按钮时，改变了index中的outer num，从控制打印信息可以看出：indexPage 和 subPage1都重新render了，但是 subPage2 没有重新render，可以看出，这里subPage2中的PureComponent 帮我们做了优化。
 
-当点击`add inner num`按钮时，改变了index中的inner num，并且通过props传递给了子组件，从控制打印信息可以看出：indexPage 、 subPage1 和 subPage2  都重新render了，因为 subPage2 中的PureComponent检测到前后两个props不一样，所以做重新render。
+当点击`add inner num`按钮时，改变了index中的inner num，并且通过props传递给了子组件，从控制打印信息可以看出：indexPage 、 subPage1 和 subPage2  都重新render了，因为 subPage2 中的PureComponent检测到前后两个props不一样，所以做重新render。函数组件会重新render。
 
 ## 注意事项：
 - PureComponent主要针对prop和state为基本数据类型，如bool、string、number；

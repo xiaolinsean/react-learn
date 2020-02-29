@@ -22,7 +22,10 @@ export default class subPage3 extends PureComponent {
             data
         })
     }
-
+    /**
+     * PureComponent中如果使用会有错误提示：shouldComponentUpdate
+     * Warning: subPage3 has a method called shouldComponentUpdate(). shouldComponentUpdate should not be used when extending React.PureComponent. Please extend React.Component if shouldComponentUpdate is used.
+     */
     shouldComponentUpdate(nextProps, nextState) {
         return (nextState.data.num !== this.state.data.num);
     }

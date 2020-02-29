@@ -6,6 +6,7 @@ import './style.css';
 import  SubPage1  from "../components/SubPage1/SubPage1";
 import  SubPage2  from "../components/SubPage2/SubPage2";
 import  SubPage3  from "../components/SubPage3/SubPage3";
+import SubPage4 from "../components/SubPage4/SubPage4";
 
 class PageA extends Component {
     constructor(props) {
@@ -49,6 +50,7 @@ class PageA extends Component {
                 <SubPage1 num={innerNum}></SubPage1>
                 <SubPage2 num={innerNum}></SubPage2>
                 <SubPage3 data={data}></SubPage3>
+                <SubPage4 num={innerNum}></SubPage4>
             </div>
         )
         

@@ -16,3 +16,7 @@ this project is react learning note
 - ## Refs
   
     Refs 和 Refs 转发
+
+- ## Lifecycle
+    
+    新旧react版本的生命周期函数对比
