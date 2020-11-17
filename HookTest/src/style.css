@@ -2,6 +2,33 @@ body{
     /* background: linear-gradient(red, blue); */
     display: flex;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 #content{
-    width: 50%;
+    width: 100%;
+    padding: 30px 15px;
+}
+
+.btn{
+    padding: 6px 16px;
+    border: 1px solid red;
+    font-size: 14px;
+    color: red;
+    display: inline-block;
+    margin: 10px 20px 10px 0;
+    background-color: #ffffff;
+}
+.section{
+    border-radius: 5px;
+    border:1px solid #cccccc;
+    margin: 20px 0;
+    padding: 15px;
+}
+.title{
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
 }

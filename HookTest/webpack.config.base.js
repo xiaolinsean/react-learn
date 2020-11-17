@@ -151,16 +151,7 @@ module.exports = {
 
     //插件
     plugins: [
-
-        // 拷贝对应目录文件到目的目录文件
-        new CopyWebpackPlugin([
-            {
-                from: path.resolve(BASE_PATH, 'static'),
-                to: path.resolve(BUILD_PATH, 'static'),
-            }
-        ]),
-
-
+        
         new ExtractTextWebpackPlugin({
             filename: 'css/[name].min.css',
         }),
