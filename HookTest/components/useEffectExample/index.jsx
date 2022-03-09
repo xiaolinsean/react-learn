@@ -7,7 +7,7 @@ const UseEffectExample = memo((props) => {
     const [count2, setCount2] = useState(0);
     const [fatherCount, setFatherCount] = useState(props.fatherCount)
 
-    console.log(props);
+    console.log(count);
 
     // 模拟 getDerivedStateFromProps
     useEffect(() => {

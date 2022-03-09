@@ -1,0 +1,15 @@
+body{
+    /* background: linear-gradient(red, blue); */
+    display: flex;
+}
+#content{
+    width: 100%;
+}
+.header{
+    height: 40px;
+    line-height: 40px;
+    background-color: #ff7015;
+    color: white;
+    width: 100%;
+    display: block;
+}

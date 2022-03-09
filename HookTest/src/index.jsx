@@ -1,28 +1,45 @@
-import React, { Component, useState, useMemo } from "react";
-import ReactDOM from "react-dom";
+import React, { Component, useState, useMemo } from 'react';
+import ReactDOM from 'react-dom';
 
-import UseEffectExample from "../components/useEffectExample/index";
+import UseEffectExample from '../components/useEffectExample/index';
+
+import ClassCom from '../components/classCom/index';
+import FuncCom from '../components/funcCom/index';
 
 import './style.css';
 
 const App = () => {
-    console.log("===== index render =======");
+    console.log('===== index render =======');
     const [isCountShow, setCountShow] = useState(true);
     let [fatherCount, setFatherCount] = useState(100);
     const [fatherCount2, setFatherCount2] = useState(100);
 
     return (
-        <div style={{width:"100%"}}>
-            <div className="btn" onClick={()=> setFatherCount(fatherCount + 100)}>father count</div>
-            <div className="btn" onClick={()=> setFatherCount2(fatherCount2 + 100)}>father count2</div>
+        <div style={{ width: '100%' }}>
+            <div className="btn" onClick={() => setFatherCount(fatherCount + 100)}>
+                father count
+            </div>
+            <div className="btn" onClick={() => setFatherCount2(fatherCount2 + 100)}>
+                father count2
+            </div>
 
             <div className="section">
-                <div className='title'>UseEffectExample</div>
-                {isCountShow ? <UseEffectExample fatherCount={fatherCount}/> : ''}
-                <div className="btn" onClick={()=>{setCountShow(!isCountShow)}}>remove/add conut</div>
+                <div className="title">UseEffectExample</div>
+                {isCountShow ? <UseEffectExample fatherCount={fatherCount} /> : ''}
+                <div
+                    className="btn"
+                    onClick={() => {
+                        setCountShow(!isCountShow);
+                    }}
+                >
+                    remove/add conut
+                </div>
+                <hr />
+                <ClassCom />
+                <FuncCom />
             </div>
         </div>
-    )
-}
+    );
+};
 
 ReactDOM.render(<App />, document.querySelector('#content'));

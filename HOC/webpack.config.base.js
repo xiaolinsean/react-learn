@@ -181,7 +181,7 @@ module.exports = {
         // }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            title: 'PureComponent',
+            title: 'hoc',
             template: path.resolve(TEMPLATES_PATH, 'template.html'),
             chunks: ['vendor', 'common', 'index'], // 注意此处
             // minify: {

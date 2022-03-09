@@ -1,6 +1,4 @@
-body {
+body{
     /* background: linear-gradient(red, blue); */
     display: flex;
-
-    border: 1px solid red;
 }
